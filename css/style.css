@@ -20,8 +20,6 @@ header {
 footer {
   margin-top: 5px;
   padding: 2px;
-  display: flex;
-  justify-content: space-between;
 }
 
 section {
@@ -82,11 +80,8 @@ button {
 }
 
 #theme-toggle {
-  font-size: small;
-  /* toggle to dark */
-  color: white;
-  background-color: grey;
-  border-color: darkgrey;
+  background: transparent;
+  border: transparent;
 }
 
 /* dark mode */
@@ -103,11 +98,6 @@ button {
 
 .dark a {
   color: lightskyblue;
-}
-
-.dark #theme-toggle {
-  color: black;
-  background-color: #c3c3c3;
 }
 
 /* html preview */

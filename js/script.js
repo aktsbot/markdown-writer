@@ -59,9 +59,9 @@ const setColorTheme = (theme) => {
   // set new
   if (enableDarkTheme) {
     document.body.classList.add("dark");
-    themeBtn.innerHTML = "Light";
+    themeBtn.innerHTML = "&#9728;"; // sun
   } else {
-    themeBtn.innerHTML = "Dark";
+    themeBtn.innerHTML = "&#9899;"; // moon
   }
 };
 
