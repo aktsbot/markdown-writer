@@ -4,7 +4,8 @@
 
 body {
   padding: 5px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1536px;
   font-family: sans-serif;
   background-color: #e3e3e3;
 }
@@ -19,6 +20,8 @@ header {
 footer {
   margin-top: 5px;
   padding: 2px;
+  display: flex;
+  justify-content: space-between;
 }
 
 section {
@@ -30,6 +33,11 @@ section {
 
 button {
   cursor: pointer;
+  background-color: green;
+  color: white;
+  border: 1px solid forestgreen;
+  border-radius: 3px;
+  padding: 2px 4px;
 }
 
 #input,
@@ -45,6 +53,10 @@ button {
 .logo {
   font-weight: bolder;
   font-family: monospace;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 #input textarea,
@@ -67,4 +79,55 @@ button {
 #output #html {
   font-family: sans-serif;
   background-color: white;
+}
+
+#theme-toggle {
+  font-size: small;
+  /* toggle to dark */
+  color: white;
+  background-color: grey;
+  border-color: darkgrey;
+}
+
+/* dark mode */
+.dark {
+  background-color: #202020;
+  color: #bbb;
+}
+
+.dark textarea,
+.dark #output #html {
+  background-color: #555;
+  color: #ccc;
+}
+
+.dark a {
+  color: lightskyblue;
+}
+
+.dark #theme-toggle {
+  color: black;
+  background-color: #c3c3c3;
+}
+
+/* html preview */
+#html h1,
+#html h2,
+#html h3,
+#html h4,
+#html h5,
+#html h6,
+#html p {
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+/* pdf */
+.html2pdf__container {
+  background-color: white;
+  color: black;
+}
+
+.html2pdf__container a {
+  color: blue;
 }
