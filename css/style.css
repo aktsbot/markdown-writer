@@ -4,8 +4,11 @@
 
 body {
   padding: 5px;
+  margin: 0;
+  /* 
   margin: 0 auto;
-  max-width: 1536px;
+  max-width: 1536px; 
+  */
   font-family: sans-serif;
   background-color: #e3e3e3;
 }

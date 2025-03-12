@@ -7,6 +7,9 @@ const pdf = document.querySelector("#export-pdf");
 const themeBtn = document.querySelector("#theme-toggle");
 
 const converter = new showdown.Converter();
+converter.setOption("tables", true);
+converter.setOption("tasklists", true);
+converter.setOption("strikethrough", true);
 
 const setFileName = (content) => {
   fileName = "markdown-writer";
@@ -76,7 +79,12 @@ pdf.addEventListener("click", () => {
   }
 
   html2pdf()
+    .set({
+      pagebreak: { mode: ["avoid-all", "css"] },
+      margin: [5, 2],
+    })
     .from(output)
+    .toContainer()
     .save(fileName + ".pdf");
 });
 
